@@ -42,7 +42,7 @@
                         <div class="row no-gutters align-items-center" style="margin-left: 0; margin-right: 0">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                    Total Members
+                                    회원 수
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">${countAllData.TOTAL_MEMBERS}</div>
                             </div>
@@ -59,7 +59,7 @@
                         <div class="row no-gutters align-items-center" style="margin-left: 0; margin-right: 0">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                    Today Members
+                                    오늘의 가입자
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">${countAllData.TODAY_MEMBERS}</div>
                             </div>
@@ -76,7 +76,7 @@
                         <div class="row no-gutters align-items-center" style="margin-left: 0; margin-right: 0">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                    Job Fairs
+                                    진행 예정 박람회
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">${countAllData.TODAY_MEMBERS}</div>
                             </div>
@@ -93,7 +93,7 @@
                         <div class="row no-gutters align-items-center" style="margin-left: 0; margin-right: 0">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                    Present Posting
+                                    현재 진행 공고
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
                             </div>
@@ -111,7 +111,7 @@
                 <div class="card shadow mb-4">
                     <div
                             class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 class="m-0 font-weight-bold text-primary">Daily Member trend</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">회원가입 추이</h6>
                     </div>
                     <div class="card-body">
                         <div class="chart-area">
@@ -125,7 +125,7 @@
                 <div class="card shadow mb-4">
                     <div
                             class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 class="m-0 font-weight-bold text-primary">Gender</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">성별</h6>
                     </div>
                     <div class="card-body">
                         <div class="chart-pie pt-4 pb-2">
@@ -134,11 +134,11 @@
                         <div class="mt-4 text-center small">
                             <span class="mr-2">
                                 <i class="fas fa-circle text-primary"></i>
-                                Male
+                                남성
                             </span>
                             <span class="mr-2">
                                 <i class="fas fa-circle text-danger"></i>
-                                Female
+                                여성
                             </span>
                         </div>
                     </div>
