@@ -247,7 +247,7 @@
         data: {
             labels: regDateLabels,
             datasets: [{
-                label: '회원가입 추이',
+                label: '누적 회원 수',
                 data: regDateData,
                 fill: false,
                 lineTension: 0.3,
@@ -292,7 +292,7 @@
                         padding: 10,
                         // Include a dollar sign in the ticks
                         callback: function (value, index, values) {
-                            return '$' + number_format(value);
+                            return number_format(value);
                         }
                     },
                     gridLines: {
@@ -324,7 +324,7 @@
                 callbacks: {
                     label: function (tooltipItem, chart) {
                         var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-                        return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+                        return datasetLabel + " " + number_format(tooltipItem.yLabel);
                     }
                 }
             }
