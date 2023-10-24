@@ -46,15 +46,11 @@
                             <section class="three openacco">
                                 <div class="q">
                                     <span class="yet">답변대기</span>
-                                </div>
-                            </section>
                         </c:when>
                         <c:otherwise>
                             <section class="three closeacco">
                                 <div class="q">
                                     <span class="finish">답변완료</span>
-                                </div>
-                            </section>
                         </c:otherwise>
                     </c:choose>
                     <c:choose>
@@ -66,7 +62,6 @@
                         </c:otherwise>
                     </c:choose>
                     <p>▶</p>
-                </c:forEach>
             </div>
             <div class="a">
                 <div class="line">
@@ -161,8 +156,10 @@
                     </c:choose>
                 </div>
             </div>
-        </div>
     </section>
+    </c:forEach>
+    </div>
+    </div>
     <!-- pagenation start -->
     <nav aria-label="Page navigation">
         <ul class="pagenation" style="margin:0 0">
