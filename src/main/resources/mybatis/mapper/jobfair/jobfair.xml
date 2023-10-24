@@ -36,6 +36,7 @@
              JOB_FAIR JF
         WHERE JFE.COMPANY_NO = C.COMPANY_NO
           AND JFE.JOBFAIR_NO = JF.JOBFAIR_NO
+        ORDER BY JOBFAIR_TITLE
         ]]>
     </select>
 
