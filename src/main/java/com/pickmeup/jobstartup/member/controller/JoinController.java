@@ -85,7 +85,6 @@ public class JoinController {
         }
         return "redirect:/";
     }
-
     //기업 회원가입
     @PostMapping("/company")
     public String joinCompany(@Valid @ModelAttribute JoinCompanyDTO joinCompanyDTO, BindingResult bindingResult, Model model) {
@@ -118,7 +117,7 @@ public class JoinController {
             model.addAttribute("errorMessage", e.getMessage());
             return "member/joinCompany";
         }
-        return "redirect:/jobfair/wait";
+        return "redirect:/";
     }
 
     //개인회원 아이디 중복 확인
