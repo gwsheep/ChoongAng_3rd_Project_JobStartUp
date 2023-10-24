@@ -31,12 +31,12 @@
                     문의등록
                 </button>
             </span>
+        <br/>
+        <br/>
     </div>
-    <br/>
     <section class="contents">
         <h4>문의 내역</h4>
         <div class="inner">
-            <div></div>
             <h5 class="sans">1:1 문의 내역이 <span class="blue">${questionPage.pagination.totalRecordCount}</span>건 있습니다.
             </h5>
             <div class="acco">
@@ -163,29 +163,27 @@
             </div>
         </div>
     </section>
-    </div>
-    </div>
     <!-- pagenation start -->
     <nav aria-label="Page navigation">
         <ul class="pagenation" style="margin:0 0">
             <c:set var="page" value="${questionPage.pagination}"/>
             <c:if test="${page.firstPage>5}">
-                <li class="page_item"><a class="page-link" href="javascript:void(0);"
+                <li class="page-item"><a class="page-link" href="javascript:void(0);"
                                          onclick="movePage(${page.firstPage-5})">pre</a></li>
             </c:if>
             <c:forEach var="pNo" begin="${page.firstPage}" end="${page.lastPage}" step="1">
                 <c:choose>
                     <c:when test="${pNo != criteria.currentPageNo}">
-                        <li class="page_item"><a class="page_link" href="javascript:void(0);"
-                                                 onclick="movePage(${pNo})">${pNo}</a></li>
+                        <li class="page-item"><span><a class="page-link" href="javascript:void(0);"
+                                                       onclick="movePage(${pNo})">${pNo}</a></span></li>
                     </c:when>
                     <c:otherwise>
-                        <li class="page_item">${pNo}</li>
+                        <li class="page-item"><span>${pNo}</span></li>
                     </c:otherwise>
                 </c:choose>
             </c:forEach>
             <c:if test="${page.lastPage<page.totalPageCount}">
-                <li class="page_item"><a class="page_link" href="javascript:void(0);"
+                <li class="page-item"><a class="page-link" href="javascript:void(0);"
                                          onclick="movePage(${page.firstPage+5})">next</a></li>
             </c:if>
         </ul>
@@ -208,7 +206,6 @@
 <script src="/css/template/assets/js/side.js"></script>
 
 <script>
-    var contextpath = "<%= request.getContextPath() %>";
     var accItem = document.getElementsByClassName('three');
     var accHD = document.getElementsByClassName('q');
     for (i = 0; i < accHD.length; i++) {
