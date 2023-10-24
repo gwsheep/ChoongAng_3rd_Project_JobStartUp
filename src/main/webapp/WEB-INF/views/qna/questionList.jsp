@@ -26,14 +26,14 @@
 </c:if>
 <article class="question">
     <div class="btnWrap">
-            <span>
-                <button type="button" class="subBtn_q" onclick="location.href = contextpath + '/qna/write';">
-                    문의등록
-                </button>
-            </span>
-        <br/>
-        <br/>
+    <span>
+        <button type="button" class="subBtn_q" onclick="redirectToWriteForm();">
+            문의등록
+        </button>
+    </span>
     </div>
+    <br/>
+    <br/>
     <section class="contents">
         <h4>문의 내역</h4>
         <div class="inner">
@@ -502,8 +502,15 @@
         });
     }
 
+
     function deleteAnswer(aNo) {
         window.location.href = '/qna/deleteAnswer/' + aNo;
+    }
+</script>
+<script type="text/javascript">
+    function redirectToWriteForm() {
+        var contextPath = "${pageContext.request.contextPath}"; // JSP EL을 사용하여 컨텍스트 경로 가져오기
+        window.location.href = contextPath + '/qna/write';
     }
 </script>
 </html>
