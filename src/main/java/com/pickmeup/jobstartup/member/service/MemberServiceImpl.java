@@ -135,7 +135,7 @@ public class MemberServiceImpl implements MemberService {
     @Override
     public boolean sendSMS(String userPhoneNumber, String randomNumber) {
         Message message = new Message();
-        message.setFrom("01096275797");
+        message.setFrom("01099133180");
         message.setTo(userPhoneNumber);
         message.setText("인증번호는 " + randomNumber + "입니다.");
 

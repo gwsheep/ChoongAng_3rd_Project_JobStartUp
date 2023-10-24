@@ -120,6 +120,7 @@ public class JoinController {
         }
         return "redirect:/jobfair/wait";
     }
+
     //개인회원 아이디 중복 확인
     @PostMapping("/checkDuplicate")
     @ResponseBody
