@@ -26,6 +26,7 @@
 
 **Library**<br/>
 <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jQuery&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/MyBatis-F80000?style=flat"/>&nbsp;
 <img src="https://img.shields.io/badge/Ajax-3776AB?style=flat"/>&nbsp;
 <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white"/><br/>
 
